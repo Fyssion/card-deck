@@ -34,7 +34,7 @@ setuptools.setup(
     version=version,
     author="Fyssion",
     author_email="fyssioncodes@gmail.com",
-    description="Easily make card games with this library.",
+    description="A card deck module written in python",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Fyssion/card-deck",
