@@ -1,13 +1,16 @@
 .. currentmodule:: card_deck
 
+API Reference
+==============
+
 Deck
-=====
+-----
 
 .. autoclass:: Deck
     :members:
 
 Cards
-=====
+------
 
 .. autoclass:: Card
     :members:

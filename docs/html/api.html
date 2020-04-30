@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Deck &#8212; card-deck 0.1.0 documentation</title>
+    <title>API Reference &#8212; card-deck 0.1.0 documentation</title>
     <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -52,8 +52,11 @@
     <h2>Contents</h2>
     <div class="sidebar-localtoc">
       <ul>
-<li><a class="reference internal" href="#">Deck</a></li>
+<li><a class="reference internal" href="#">API Reference</a><ul>
+<li><a class="reference internal" href="#deck">Deck</a></li>
 <li><a class="reference internal" href="#cards">Cards</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -91,21 +94,23 @@
             <ol class="breadcrumb">
               <li><a href="index.html">Docs</a></li>
               
-              <li>Deck</li>
+              <li>API Reference</li>
             </ol>
           </div>
           
           <div class="document clearer body">
             
-  <div class="section" id="deck">
-<h1>Deck<a class="headerlink" href="#deck" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="deck">
+<h2>Deck<a class="headerlink" href="#deck" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="card_deck.Deck">
 <em class="property">class </em><code class="sig-prename descclassname">card_deck.</code><code class="sig-name descname">Deck</code><span class="sig-paren">(</span><em class="sig-param">cards</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck" title="Permalink to this definition">¶</a></dt>
 <dd><p>A card deck</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>cards</strong> (List[<a class="reference internal" href="index.html#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- A list of cards to start the deck with. These are automatically shuffled</p>
+<dd class="field-odd"><p><strong>cards</strong> (List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- A list of cards to start the deck with. These are automatically shuffled</p>
 </dd>
 </dl>
 <dl class="method">
@@ -123,7 +128,7 @@
 <dd class="field-even"><p><strong>card(s)</strong> -- The card drawn or a list of cards drawn in order</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>Union[<a class="reference internal" href="index.html#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>, List[<a class="reference internal" href="index.html#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]]</p>
+<dd class="field-odd"><p>Union[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>, List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -135,7 +140,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>card</strong> (<a class="reference internal" href="index.html#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>) -- The card to insert into the deck</p></li>
+<li><p><strong>card</strong> (<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>) -- The card to insert into the deck</p></li>
 <li><p><strong>position</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) -- The position at which to insert the card, zero being the top</p></li>
 </ul>
 </dd>
@@ -149,7 +154,7 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>cards</strong> (List[<a class="reference internal" href="index.html#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- The list of cards to insert into the deck</p></li>
+<li><p><strong>cards</strong> (List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- The list of cards to insert into the deck</p></li>
 <li><p><strong>position</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) -- The position at which to insert the cards, zero being the top</p></li>
 </ul>
 </dd>
@@ -166,7 +171,7 @@
 
 </div>
 <div class="section" id="cards">
-<h1>Cards<a class="headerlink" href="#cards" title="Permalink to this headline">¶</a></h1>
+<h2>Cards<a class="headerlink" href="#cards" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="card_deck.Card">
 <em class="property">class </em><code class="sig-prename descclassname">card_deck.</code><code class="sig-name descname">Card</code><span class="sig-paren">(</span><em class="sig-param">name: str</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Card" title="Permalink to this definition">¶</a></dt>
@@ -201,6 +206,7 @@
 <dd></dd></dl>
 
 <p>You can get a set of uno cards with <code class="xref py py-data docutils literal notranslate"><span class="pre">card_deck.uno_cards</span></code></p>
+</div>
 </div>
 
 
