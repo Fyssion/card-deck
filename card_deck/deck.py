@@ -8,7 +8,7 @@ class Deck:
 
     Parameters
     -----------
-    cards ([card_deck.Card]):
+    cards: List[:class:`.Card`]
         A list of cards to start the deck with. These are automatically shuffled
     """
 
@@ -25,15 +25,15 @@ class Deck:
 
         Parameters
         -----------
-        count (int) [optional]:
+        count: Optional[:class:`int`]
             How many cards to draw from the deck
-        from_bottom (bool) [optional]:
+        from_bottom: Optional[:class:`bool`]
             Whether or not to draw from the bottom
 
         Returns
         --------
-        card(s) (Card or [Card,..]):
-            The card draw or a list of cards draw in order
+        card(s): Union[:class:`.Card`, List[:class:`.Card`]]
+            The card drawn or a list of cards drawn in order
         """
         cards = []
         for i in range(count):
@@ -49,9 +49,9 @@ class Deck:
 
         Parameters
         -----------
-        card (card_deck.Card):
+        card: :class:`.Card`
             The card to insert into the deck
-        position (int) [optional]:
+        position: Optional[:class:`int`]
             The position at which to insert the card, zero being the top
         """
         self._deck.insert(position, card)
@@ -61,9 +61,9 @@ class Deck:
 
         Parameters
         -----------
-        cards ([card_deck.Card,...]):
+        cards: List[:class:`.Card`]
             The list of cards to insert into the deck
-        position (int) [optional]:
+        position: Optional[:class:`int`]
             The position at which to insert the cards, zero being the top
         """
         for i, card in enumerate(cards):

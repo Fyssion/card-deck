@@ -12,4 +12,4 @@ Mac/Linux: python3 -m pip install git+https://github.com/Fyssion/card-deck.git
 
 ## Documentation
 
-I will build the documentation later
+Documentation can be found [here](https://www.fyssioncodes.com/card-deck).

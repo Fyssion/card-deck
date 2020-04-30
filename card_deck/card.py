@@ -6,12 +6,12 @@ class Card:
 
     Parameters
     -----------
-    name (str):
+    name: :class:`str`
         The name of the card
 
     Attributes
     -----------
-    name (str):
+    name: :class:`str`
         The name of the card
     """
 
