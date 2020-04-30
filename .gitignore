@@ -2,3 +2,4 @@
 .vscode/settings.json
 *.pyc
 docs-src/build/*
+docs-src/source/_build/*

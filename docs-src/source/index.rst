@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to card-deck's documentation!
+card-deck
 =====================================
+
+A card deck module written in python
 
 .. note::
    This documentation is a work-in-progress.
@@ -14,17 +16,14 @@ Welcome to card-deck's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-.. currentmodule:: card_deck
-
-.. autoclass:: Card
-    :members:
-
-.. autoclass:: Deck
-    :members:
+   quickstart
+   deck
+   cards
+   examples
+   api
 
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

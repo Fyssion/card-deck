@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Welcome to card-deck&#39;s documentation! &#8212; card-deck 0.1.0 documentation</title>
+    <title>card-deck &#8212; card-deck 0.1.0 documentation</title>
     <link rel="stylesheet" href="_static/guzzle.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -23,6 +23,7 @@
     <script src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Quickstart" href="quickstart.html" />
   
    
 
@@ -33,6 +34,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="quickstart.html" title="Quickstart"
+             accesskey="N">next</a> |</li>
         <li class="nav-item nav-item-0"><a href="#">card-deck 0.1.0 documentation</a> &#187;</li> 
       </ul>
     </div>
@@ -48,13 +52,16 @@
     <h2>Contents</h2>
     <div class="sidebar-localtoc">
       <ul>
-<li><a class="reference internal" href="#">Welcome to card-deck's documentation!</a></li>
+<li><a class="reference internal" href="#">card-deck</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 
     </div>
   </div>
 </div>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="quickstart.html"
+                        title="next chapter">Quickstart</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -84,113 +91,35 @@
             <ol class="breadcrumb">
               <li><a href="#">Docs</a></li>
               
-              <li>Welcome to card-deck's documentation!</li>
+              <li>card-deck</li>
             </ol>
           </div>
           
           <div class="document clearer body">
             
-  <div class="section" id="welcome-to-card-deck-s-documentation">
-<h1>Welcome to card-deck's documentation!<a class="headerlink" href="#welcome-to-card-deck-s-documentation" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="card-deck">
+<h1>card-deck<a class="headerlink" href="#card-deck" title="Permalink to this headline">¶</a></h1>
+<p>A card deck module written in python</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This documentation is a work-in-progress.</p>
 </div>
 <div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deck.html">Deck</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cards.html">Cards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Deck</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html#cards">Cards</a></li>
+</ul>
 </div>
-<dl class="class">
-<dt id="card_deck.Card">
-<em class="property">class </em><code class="sig-prename descclassname">card_deck.</code><code class="sig-name descname">Card</code><span class="sig-paren">(</span><em class="sig-param">name: str</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Card" title="Permalink to this definition">¶</a></dt>
-<dd><p>A playing card with no special attributes</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) -- The name of the card</p>
-</dd>
-</dl>
-<dl class="attribute">
-<dt id="card_deck.Card.name">
-<code class="sig-name descname">name</code><a class="headerlink" href="#card_deck.Card.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>The name of the card</p>
-<dl class="field-list simple">
-<dt class="field-odd">Type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="class">
-<dt id="card_deck.Deck">
-<em class="property">class </em><code class="sig-prename descclassname">card_deck.</code><code class="sig-name descname">Deck</code><span class="sig-paren">(</span><em class="sig-param">cards</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck" title="Permalink to this definition">¶</a></dt>
-<dd><p>A card deck</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>cards</strong> (List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- A list of cards to start the deck with. These are automatically shuffled</p>
-</dd>
-</dl>
-<dl class="method">
-<dt id="card_deck.Deck.draw">
-<code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">count: int = 1</em>, <em class="sig-param">from_bottom: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck.draw" title="Permalink to this definition">¶</a></dt>
-<dd><p>Draw a card from the deck</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>count</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) -- How many cards to draw from the deck</p></li>
-<li><p><strong>from_bottom</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]) -- Whether or not to draw from the bottom</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><strong>card(s)</strong> -- The card drawn or a list of cards drawn in order</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>Union[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>, List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="method">
-<dt id="card_deck.Deck.insert">
-<code class="sig-name descname">insert</code><span class="sig-paren">(</span><em class="sig-param">card: card_deck.card.Card</em>, <em class="sig-param">position: int = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck.insert" title="Permalink to this definition">¶</a></dt>
-<dd><p>Insert a card at the given position, zero being the top</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>card</strong> (<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>) -- The card to insert into the deck</p></li>
-<li><p><strong>position</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) -- The position at which to insert the card, zero being the top</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="method">
-<dt id="card_deck.Deck.insert_many">
-<code class="sig-name descname">insert_many</code><span class="sig-paren">(</span><em class="sig-param">cards: list</em>, <em class="sig-param">position: int = 0</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck.insert_many" title="Permalink to this definition">¶</a></dt>
-<dd><p>Insert a list of cards at the given position, zero being the top</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>cards</strong> (List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- The list of cards to insert into the deck</p></li>
-<li><p><strong>position</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) -- The position at which to insert the cards, zero being the top</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="method">
-<dt id="card_deck.Deck.shuffle">
-<code class="sig-name descname">shuffle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck.shuffle" title="Permalink to this definition">¶</a></dt>
-<dd><p>Shuffle the deck</p>
-</dd></dl>
-
-</dd></dl>
-
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
 <li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </div>
@@ -198,6 +127,14 @@
 
           </div>
             
+  <div class="footer-relations">
+    
+      <div class="pull-right">
+        <a class="btn btn-default" href="quickstart.html" title="next chapter (use the right arrow)">Quickstart</a>
+      </div>
+    </div>
+    <div class="clearer"></div>
+  
         </div>
         <div class="clearfix"></div>
     </div>
@@ -207,6 +144,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="quickstart.html" title="Quickstart"
+             >next</a> |</li>
         <li class="nav-item nav-item-0"><a href="#">card-deck 0.1.0 documentation</a> &#187;</li> 
       </ul>
     </div>
