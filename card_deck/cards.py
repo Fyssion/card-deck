@@ -52,7 +52,6 @@ class Suit(enum.Enum):
 
 
 class StandardCard(Card):
-
     def __init__(self, type, suit):
         name = f"{type.name} of {suit.name}"
         super().__init__(name)
@@ -64,8 +63,8 @@ class StandardCard(Card):
 # You can pass this into a deck to set up a deck
 standard_cards = []
 
-for suit in (Suit):
-    for card_type in (StandardCardType):
+for suit in Suit:
+    for card_type in StandardCardType:
         standard_cards.append(StandardCard(card_type, suit))
 
 # ======================================
@@ -99,24 +98,24 @@ class UnoCardType(enum.Enum):
 
 
 class UnoCard(Card):
-
     def __init__(self, color: Color, type: UnoCardType):
         name = f"{color.name} {type.name}"
         super().__init__(name)
         self.color = color
         self.type = type
 
+
 # Comilping a list of all uno cards in a standard uno game
 # You can pass this into a deck to set up an uno deck
 uno_cards = []
 
 # Adding first set of cards
-for color in (Color):
+for color in Color:
     for i in range(14):
         uno_cards.append(UnoCard(color, UnoCardType(i)))
 # Adding second set of cards
-for color in (Color):
+for color in Color:
     for i in range(12):
-        uno_cards.append(UnoCard(color, UnoCardType(i+1)))
+        uno_cards.append(UnoCard(color, UnoCardType(i + 1)))
         # Append missing wild_add_4 card
     uno_cards.append(UnoCard(color, UnoCardType.wild_add_4))

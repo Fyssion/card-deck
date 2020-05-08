@@ -1,6 +1,6 @@
 import random
 
-from .cards import Card
+from card_deck import Card
 
 
 class Deck:
