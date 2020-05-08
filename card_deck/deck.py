@@ -16,6 +16,18 @@ class Deck:
         self._deck = cards
         self.shuffle()
 
+    def __getitem__(self, item):
+        return self._deck[item]
+
+    def __len__(self):
+        return len(self._deck)
+
+    def __iter__(self):
+        return iter(self._deck)
+
+    def __str__(self):
+        return str(self._deck)
+
     def shuffle(self):
         """Shuffle the deck"""
         random.shuffle(self._deck)
