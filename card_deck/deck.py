@@ -5,15 +5,10 @@ from card_deck import Card
 
 class Deck:
     """A card deck
-
-    Parameters
-    -----------
-    cards: List[:class:`.Card`]
-        A list of cards to start the deck with. These are automatically shuffled
     """
 
-    def __init__(self, cards):
-        self._cards = cards
+    def __init__(self):
+        self._cards = []
         self.shuffle()
 
     def __getitem__(self, item):
