@@ -45,8 +45,9 @@ class Deck:
         cards = []
         for i in range(count):
             if from_bottom:
-                cards += self._cards.pop(len(self._cards) - 1 - i)
-            cards += self._cards.pop(i)
+                cards += self._cards.pop(len(self._cards) - 1)
+            else:
+                cards += self._cards.pop()
 
         if count == 1:
             return cards[0]
