@@ -42,12 +42,15 @@ class Deck:
         card(s): Union[:class:`.Card`, List[:class:`.Card`]]
             The card drawn or a list of cards drawn in order
         """
+        if count > len(self._cards) - 1:
+            raise IndexError("Index out of range. Card count higher than deck length.")
+
         cards = []
         for i in range(count):
             if from_bottom:
-                cards += self._cards.pop(len(self._cards) - 1)
+                cards.append(self._cards.pop(len(self._cards) - 1))
             else:
-                cards += self._cards.pop()
+                cards.append(self._cards.pop())
 
         if count == 1:
             return cards[0]
@@ -89,6 +92,9 @@ class Deck:
         from_bottom: Optional[:class:`bool`]
             Whether or not to peek from the bottom of the deck
         """
+        if count > len(self._cards) - 1:
+            raise IndexError("Index out of range. Card count higher than deck length.")
+
         if from_bottom:
             cards = [self._cards[len(self._cards) - 1 - i] for i in range(count)]
         else:
