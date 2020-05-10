@@ -160,13 +160,8 @@
 <h2>Deck<a class="headerlink" href="#deck" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
 <dt id="card_deck.Deck">
-<em class="property">class </em><code class="sig-prename descclassname">card_deck.</code><code class="sig-name descname">Deck</code><span class="sig-paren">(</span><em class="sig-param">cards</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">card_deck.</code><code class="sig-name descname">Deck</code><a class="headerlink" href="#card_deck.Deck" title="Permalink to this definition">¶</a></dt>
 <dd><p>A card deck</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>cards</strong> (List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- A list of cards to start the deck with. These are automatically shuffled</p>
-</dd>
-</dl>
 <dl class="method">
 <dt id="card_deck.Deck.draw">
 <code class="sig-name descname">draw</code><span class="sig-paren">(</span><em class="sig-param">count: int = 1</em>, <em class="sig-param">from_bottom: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck.draw" title="Permalink to this definition">¶</a></dt>
@@ -210,6 +205,20 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>cards</strong> (List[<a class="reference internal" href="#card_deck.Card" title="card_deck.Card"><code class="xref py py-class docutils literal notranslate"><span class="pre">Card</span></code></a>]) -- The list of cards to insert into the deck</p></li>
 <li><p><strong>position</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>]) -- The position at which to insert the cards, zero being the top</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="card_deck.Deck.peek">
+<code class="sig-name descname">peek</code><span class="sig-paren">(</span><em class="sig-param">count: int = 1</em>, <em class="sig-param">from_bottom: bool = False</em><span class="sig-paren">)</span><a class="headerlink" href="#card_deck.Deck.peek" title="Permalink to this definition">¶</a></dt>
+<dd><p>Peek at the top card(s)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>count</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) -- The number of cards to peek</p></li>
+<li><p><strong>from_bottom</strong> (Optional[<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]) -- Whether or not to peek from the bottom of the deck</p></li>
 </ul>
 </dd>
 </dl>
